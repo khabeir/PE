@@ -1,4 +1,15 @@
+=====
+Information Disclosure through .DS_Store in www.viewpoints.fb.com
 
+The website located at www.viewpoints.fb.com has an information disclosure through ".DS_Store" file, accessible to unauthorized external users.
+======
+MacOS .DS_Store Directory Listing Disclosure Vulnerability
+In macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or js files and some configurations . Also list the whole files on directory that has been created as hidden file file, automatically by MacOS. 
+This information could provide an attacker with sensitive information including system configuration, installed applications, etc. Properly exploited.
+===
+Browser: [Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36]
+
+OS: [Kernel Linux 5.9.0-2parrot1-amd64 x86_64]
 1. Go to the Url: https://www.viewpoints.fb.com/.DS_Store and the DS_Store file automatically downloaded
 2.  Setup the dsstore.py, then Run the script and see the output 
 git clone https://github.com/gehaxelt/Python-dsstore && cd Python-dsstore/ && chmod +x dsstore.py 
